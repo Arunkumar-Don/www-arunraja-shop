@@ -11,7 +11,7 @@ pipeline {
 
         stage('deploy'){
             steps {
-                sh "aws s3 cp demo.html s3://demouploadjenkins"
+                sh "aws s3 cp index.html s3://demouploadjenkins"
             }
         }
     }
